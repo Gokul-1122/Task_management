@@ -21,7 +21,7 @@ const ProjectForm = ({ addProject }) => {
         console.log(response);
         // addProject(data.projectId);
         setProjectName('');
-        setError(null); // Reset error state on successful submission
+        setError(null); 
       } catch (error) {
         setError('Error adding project');
         console.error('Error:', error);

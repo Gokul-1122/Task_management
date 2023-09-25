@@ -2,8 +2,12 @@ const { Task } = require('../../models/');
 
 const createTask = async (req, res) => {
   try {
+    console.log(req.body);
     const { project_id, name, deadline } = req.body;
-    const task = await Task.create({ project_id, name, deadline });
+    const task = await Task.create({
+       projectName:project_id,
+       name: name, 
+       deadline:deadline });
     res.json({ taskId: task.id });
   } catch (error) {
     console.error(error);
@@ -43,28 +47,32 @@ const deleteTask = async (req, res) => {
 };
 
 
-
 const updateTaskStatus = async (req, res) => {
-  const { taskId } = req.params;
-  const { completed } = req.body;
-
   try {
-    const updatedTask = await Task.update({ completed }, { where: { id: taskId } });
+    const taskId = req.params.id;
+    const { status } = req.body;
+    const task = await Task.findByPk(taskId);
 
-    if (updatedTask[0] === 1) {
-      res.json({ message: 'Task status updated successfully' });
-    } else {
-      res.status(404).json({ message: 'Task not found' });
+    if (!task) {
+      return res.status(404).json({ message: 'Task not found' });
     }
+
+    if (task.status === 'completed') {
+      return res.status(400).json({ message: 'Task is already completed and cannot be changed.' });
+    }
+
+    task.status = status;
+    await task.save();
+
+    res.json({ message: 'Task status updated successfully' });
   } catch (error) {
-    console.error('Error updating task status:', error);
+    console.error(error);
     res.status(500).json({ message: 'Internal Server Error' });
   }
 };
 
-module.exports = {
-  updateTaskStatus,
-};
+
+
 
 module.exports = {
   createTask,

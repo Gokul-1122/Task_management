@@ -57,14 +57,19 @@ const Task = sequelize.define('Task', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  projectName: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  
+  },
   
   deadline: {
     type: DataTypes.DATE,
     allowNull: false,
   },
   Status: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false,
+    type: DataTypes.STRING,
+    defaultValue: 'on progress',
   },
 });
 

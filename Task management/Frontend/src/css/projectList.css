@@ -6,15 +6,32 @@
     height: 25px;
     border-radius: 4px;
     color: white;
+    
 }
 
 li{
-    font-weight: lighter;
+    font-weight: 400;
 }
 
-.search{
+.project-search button{
+    margin-left: 0;
     margin-bottom: 3%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
 }
+
+.project-search input{
+    margin-left: 2%;
+    height: 10px;
+}
+
+.project-search :hover{
+    background-color: white;
+    color: black;
+  }
 
 .dlte-btn{
     display: flex;
@@ -22,7 +39,7 @@ li{
     margin-right: 50px;
 }
 
-.dlte-btn :hover{
+.dlte-btn button:hover{
     background-color: rgb(138, 11, 11);
 }
 
@@ -36,4 +53,5 @@ li{
     font-size: 13px;
     margin-top: 2%;
     font-weight: 400;
+    border-radius: 10px;
 }

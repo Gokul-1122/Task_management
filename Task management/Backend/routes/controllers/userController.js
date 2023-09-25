@@ -4,14 +4,10 @@ const { User } = require('../../models');
 const register = async (req, res) => {
   try {
     const { username, email, password } = req.body;
-
-    // Hash the password
     const hashedPassword = await bcryptjs.hash(password, 10);
-
-    // Create a new user
     const user = await User.create({ username, email, password: hashedPassword });
     console.log(user);
-    res.json({ message: 'User registered successfully' });
+    // res.json({ message: 'User registered successfully' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Internal Server Error' });
@@ -27,8 +23,6 @@ const login = async (req, res) => {
     if (!user) {
       return res.status(401).json({ message: 'Invalid credentials' });
     }
-
-    // Compare passwords
     const isPasswordValid = await bcryptjs.compare(password, user.password);
 
     if (!isPasswordValid) {

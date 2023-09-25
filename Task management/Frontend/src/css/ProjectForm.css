@@ -10,8 +10,11 @@
     padding: 20px;
     border: 1px solid #ccc;
     background-color:whitesmoke;
+    /* background-color: #673AB7; */
+    /* background-color: #228B22; */
     color: black;
     font-size: 12PX;
+    border-radius: 10px;
   }
   
   .form-groupp {
@@ -27,7 +30,7 @@
 
   
   .project-form  input {
-    width: 80%;
+    width: 40%;
     padding: 8px;
   }
   
@@ -35,11 +38,11 @@
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 10px;
+    padding: 5px;
     cursor: pointer;
-    width: 30%;
+    width: 25%;
     margin-left: 0;
-    border-radius: 4px;
+    border-radius: 3px;
   }
   
   .addproject button:hover {

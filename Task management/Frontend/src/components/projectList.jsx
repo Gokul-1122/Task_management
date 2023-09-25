@@ -44,7 +44,7 @@ const ProjectList = () => {
 
   return (
     <div className="project-list">
-      <div className='search'>
+      <div className='project-search'>
         <button><FaSearch onClick={toggleSearchBar} /></button> 
         {isSearchVisible && (
           <input

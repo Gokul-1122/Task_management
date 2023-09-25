@@ -26,7 +26,7 @@ const TaskForm = ({ projects, addTask }) => {
         addTask(data.taskId);
         setTaskName('');
         setDeadline('');
-        setError(null); // Reset error state on successful submission
+        setError(null); 
       } catch (error) {
         setError('Error adding task');
         console.error('Error:', error);
@@ -47,9 +47,11 @@ const TaskForm = ({ projects, addTask }) => {
         <select
           value={selectedProject}
           onChange={e => setSelectedProject(e.target.value)}
-        >
+        ><option value="">
+        Select Project
+      </option>
           {projects.map(project => (
-            <option key={project.id} value={project.id}>
+            <option key={project.id} value={project.name}>
               {project.name}
             </option>
           ))}

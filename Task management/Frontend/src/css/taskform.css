@@ -1,0 +1,49 @@
+.task-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 13PX;
+    /* height: 55%; */
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+    margin-top: 2%;
+  }
+  
+  label {
+    font-weight:500;;
+    display: flex;
+    margin-bottom: 2%;
+  }
+  
+  input,
+  select {
+    width: 80%;
+    padding: 8px;
+  }
+  
+  .addtask button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 0;
+    border-radius: 4px;
+    margin-top: 3px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  

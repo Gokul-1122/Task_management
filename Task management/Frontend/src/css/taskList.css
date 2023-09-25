@@ -1,0 +1,135 @@
+.task-list {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: black;
+  margin-top: 0;
+  font-weight:lighter;
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+  overflow: auto;
+}
+
+.search button{
+  background-color: #f8f5fc;
+  width: 15%;
+  height: 25px;
+  border-radius: 5px;
+  border: 0;
+  color: rgb(15, 15, 15);
+  margin-bottom: 2%;
+}
+
+.search{
+  width: 50%;
+  display: flex;
+}
+
+.search input{
+  margin-left: 2%;
+}
+
+.status select{
+  width: 115%;
+  padding: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+ul {
+  list-style-type: none;
+  font-weight:500;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+
+input {
+  width: 60%;
+  border-radius: 4px;
+  background-color: rgb(224, 221, 221);
+  border: 1px solid black;
+}
+
+select {
+  width: 50%;
+  color: rgb(78, 76, 76);
+  background-color: rgb(224, 221, 221);
+  border-radius: 4px;
+  border: 1px solid black;
+
+}
+
+.dlte-task {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.check {
+  width: 12%;
+}
+
+.dlte-task button:hover {
+  background-color: rgb(138, 11, 11);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px; 
+  
+  /* display: flex; */
+  /* justify-content: flex-end; */
+}
+
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+  padding-right: 30px ;
+  font-weight:500;
+  font-size: 15px;
+}
+
+td {
+  padding: 8px;
+  font-size: 14px;
+  font-weight:400 ;
+}
+
+
+th.delete {
+  text-align: center; 
+}
+
+
+.dlte-task button {
+  background-color: #ff6262; 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(214, 27, 27);
+  color: rgb(15, 15, 15);
+  width: 65%;
+  border: 0;
+  height: 25px;
+  border-radius: 4px;
+  color: white;
+}
+
+
+.dlte-task button {
+  margin: 0 4px;
+}

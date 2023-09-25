@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  margin-left: 1.5%;
+}
+
+body{
+  background-image: linear-gradient(to bottom right, black,rgb(6, 6, 126));
+}
+
+.project-section{
+  width: 35vw;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+  margin-bottom: 0%;
+}
+
+.task-section{
+  width: 50vw;
+  padding: 10px 10px 10px 10px;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+  margin-bottom: 0%;
+}
+
+
+
+h2{
+  font-weight:500;
+  margin: 0;
+}
+
+.task-section,.project-section {
+  background-color: transparent;
+  color: rgb(247, 246, 246);
+}
+
+form {
+  margin-bottom: 5px;
+  background-color: wheat;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+

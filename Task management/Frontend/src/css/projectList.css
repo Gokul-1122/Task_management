@@ -1,0 +1,39 @@
+.dlte-btn button{
+    background-color: rgb(214, 27, 27);
+    color: rgb(15, 15, 15);
+    width: 11%;
+    border: 0;
+    height: 25px;
+    border-radius: 4px;
+    color: white;
+}
+
+li{
+    font-weight: lighter;
+}
+
+.search{
+    margin-bottom: 3%;
+}
+
+.dlte-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.dlte-btn :hover{
+    background-color: rgb(138, 11, 11);
+}
+
+.project-list{
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color:whitesmoke;
+    color: black;
+    font-size: 13px;
+    margin-top: 2%;
+    font-weight: 400;
+}
